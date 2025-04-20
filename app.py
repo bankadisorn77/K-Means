@@ -6,10 +6,13 @@ from sklearn.datasets import make_blobs
 with open('kmeans_model.pkl','rb') as f:
     model = pickle.load(f)
     
-#set pafe cofig
-st.set_page_config(page_title = 'K-Means Clustering App', layout = 'centered')
+
 #set title
 st.title("k-Means Clustering Visualizer by Adisorn Saard")
+
+#set pafe cofig
+st.set_page_config(page_title = 'K-Means Clustering App', layout = 'centered')
+
 #Diasplay
 st.subheader('Example Data for Visualization')
 st.markdown('This demo user example data (2D) to illustrate clustering results.')
