@@ -11,7 +11,7 @@ with open('kmeans_model.pkl','rb') as f:
 st.title("k-Means Clustering Visualizer by Adisorn Saard")
 
 #set pafe cofig
-st.set_page_config(page_title = 'K-Means Clustering App', layout = 'centered')
+st.set_page_config(page_title = 'k-Means Clustering App', layout = 'centered')
 
 #Diasplay
 st.subheader('Example Data for Visualization')
