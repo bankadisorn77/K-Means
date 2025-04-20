@@ -22,6 +22,6 @@ y_kmeans = model.predict(X)
 
 # Plotting
 plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
-plt.scatter(loaded_model.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=300, c='red')
+plt.scatter(loaded_model.cluster_centers_[:, 0], model.cluster_centers_[:, 1], s=300, c='red')
 plt.title('k-Means Clustering')
 plt.show()
