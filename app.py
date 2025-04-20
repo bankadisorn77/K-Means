@@ -19,3 +19,9 @@ st.markdown('This demo user example data (2D) to illustrate clustering results.'
 from sklearn.datasets import make_blobs
 X, y = make_blobs(n_samples=300, centers=model.n_clusters, cluster_std=0.60, random_state=0)
 y_kmeans = model.predict(X)
+
+# Plotting
+plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, cmap='viridis')
+plt.scatter(loaded_model.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=300, c='red')
+plt.title('k-Means Clustering')
+plt.show()
